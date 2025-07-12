@@ -32,9 +32,9 @@ jobs:
             ${{ runner.os }}-maven
 
       - name: Run All Tests
-        run: mvn -B verify --file pom.xml
+        run: mvn -B verify 
 
       - name: Build the Application
         run: |
           mvn clean
-          mvn -B package --file pom.xml
+          mvn -B package 
