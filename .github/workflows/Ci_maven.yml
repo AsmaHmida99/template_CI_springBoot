@@ -1,4 +1,4 @@
-name: Build Spring Boot App
+name: Template CI spring boot with maven
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build & Test Spring Boot (Maven)
+    name: CI for Spring Boot (Maven)
     runs-on: ubuntu-latest
 
     steps:
@@ -32,9 +32,8 @@ jobs:
             ${{ runner.os }}-maven
 
       - name: Run All Tests
-        run: mvn -B verify 
+        run: mvn -B verify
 
       - name: Build the Application
-        run: |
-          mvn clean
-          mvn -B package 
+        run:  mvn clean package -B
+              
