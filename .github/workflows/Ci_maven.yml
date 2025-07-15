@@ -1,4 +1,4 @@
-name: CI Pipeline for Spring Boot with Maven  
+name: Pipeline for Spring Boot with Maven  
   
 on:  
   push:
