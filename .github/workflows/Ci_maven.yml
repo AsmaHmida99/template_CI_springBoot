@@ -1,14 +1,16 @@
 name: CI Pipeline for Spring Boot with Maven  
   
 on:  
-  push:  
-    branches: [ main ]  
-  pull_request:  
-    branches: [ main ]  
+  push:
+    branches:
+        - main
+  pull_request:
+    branches:
+        - main
   
 jobs:  
   ci:  
-    name: Continuous Integration  
+    name: Continuous Integration 
     runs-on: ubuntu-latest  
       
     steps:  
